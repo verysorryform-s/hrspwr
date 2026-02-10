@@ -1,65 +1,126 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #121212;
-    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
     text-align: center;
     padding: 50px 20px;
-    background: #1e1e1e;
+    background: #111;
+}
+
+header .logo {
+    width: 120px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
 }
 
 header h1 {
     font-size: 3rem;
-    color: #00bcd4;
+    color: #bb1122;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2rem;
-    margin: 10px 0 20px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 nav a {
     margin: 0 15px;
-    color: #00bcd4;
+    color: #bb1122;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #fff;
 }
 
+/* Sections */
 section {
     padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: #bb1122;
     margin-bottom: 30px;
-    color: #00bcd4;
 }
 
+/* Portfolio */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.gallery img {
-    width: 100%;
+.gallery-item {
+    overflow: hidden;
     border-radius: 10px;
-    object-fit: cover;
+    cursor: pointer;
+    position: relative;
 }
 
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05) rotate(-1deg);
+    filter: brightness(1.1);
+}
+
+/* Links */
+a {
+    color: #bb1122;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 30px;
-    background: #1e1e1e;
+    background: #111;
     color: #888;
+}
+
+/* Fade-in on scroll */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media(max-width: 480px){
+    header h1 { font-size: 2rem; }
+    section { padding: 40px 15px; }
 }
