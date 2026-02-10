@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRSPWR Photography</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRSPWR Photography</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header>
-        <img src="logo.jpg" alt="HRSPWR Logo" class="logo">
-        <h1>HRSPWR Photography</h1>
-        <p>Car rollers, meets, and automotive vibes</p>
-        <nav>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="gallery">
-            <div class="gallery-item"><img src="car1.jpg" alt="Car 1"></div>
-            <div class="gallery-item"><img src="https://via.placeholder.com/400x300?text=Car+2" alt="Car 2"></div>
-            <div class="gallery-item"><img src="https://via.placeholder.com/400x300?text=Car+3" alt="Car 3"></div>
-            <div class="gallery-item"><img src="https://via.placeholder.com/400x300?text=Car+4" alt="Car 4"></div>
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-container">
+        <img src="images/logo.jpg" alt="HRSPWR Logo" class="logo">
+      <h1>HRSPWR Photography</h1>
+      <p>Capturing the beauty in cars</p>
+      <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+        <!-- Phone-style rectangles -->
+        <div class="gallery-item"><img src="images/car1.jpg" alt="Car 1"></div>
+        <div class="gallery-item"><img src="images/car2.jpg" alt="Car 2"></div>
+        <div class="gallery-item"><img src="images/car3.jpg" alt="Car 3"></div>
+        <div class="gallery-item"><img src="images/car4.jpg" alt="Car 4"></div>
+
+        <!-- Landscape / desktop-style image -->
+        <div class="gallery-item gallery-landscape"><img src="images/car5.jpg" alt="Car 5"></div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service">
+        <h3>Rollers & Motion Shots</h3>
+        <p>High-speed captures showcasing every detail.</p>
+      </div>
+      <div class="service">
+        <h3>Car Meets & Events</h3>
+        <p>Professional coverage of cars.</p>
+      </div>
+      <div class="service">
+        <h3>Custom Photoshoots</h3>
+        <p>Personalized sessions for your vehicle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>HRSPWR Photography specializes in automotive photography, capturing cars in dynamic motion and studio-style compositions. Our mission is to showcase power, design, and elegance in every shot.</p>
+  </section>
+
+  <!-- Contact Section -->
+<!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-item">
+            <img src="images/gmail.png" alt="Email" class="contact-icon">
+            <span>Email: <a href="mailto:hrspwr@gmail.com">hrspwr@gmail.com</a></span>
+        </div>
+        <div class="contact-item">
+            <img src="images/instagram.png" alt="Instagram" class="contact-icon">
+            <span>Instagram: <a href="https://www.instagram.com/hrspwr.media" target="_blank">@hrspwr.media</a></span>
+        </div>
+        <div class="contact-item">
+            <img src="images/tiktok.png" alt="TikTok" class="contact-icon">
+            <span>TikTok: <a href="https://www.tiktok.com/@hrspwr" target="_blank">@hrspwr.media</a></span>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>HRSPWR Photography captures the power, speed, and style of cars. From rollers to car meets, we make every shot unforgettable.</p>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:info@hrspwr.shop">info@hrspwr.shop</a></p>
-        <p>Instagram: <a href="#">@hrspwr_photography</a></p>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 HRSPWR Photography</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 HRSPWR Photography. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
